@@ -3,8 +3,8 @@ package com.company;
 public class Main {
     public static void main(String[] args) {
 	    Console console = new Console();
-	    
-	    
+
+        console.log("Hello World");
 
         console.log("Welcome to this script");
 
