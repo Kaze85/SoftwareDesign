@@ -1,27 +1,15 @@
-package com.company;
+package app;
 
 public class Main {
+
     public static void main(String[] args) {
-	    Console console = new Console();
-
-        console.log("Hello World");
-
-        console.log("Welcome to this script");
-
-	    console.log("It is 6:00");
-	    Student studentOne = new Student("Kaycee", 21, 1234567, "yes");
-        Student studentTwo = new Student("Alex", 21, 7654321, "no");
-
-	    Student[] students = {studentOne, studentTwo};
-        console.log("We have" + students.length + "students:");
-
-        for (Student student: students) {
-            console.log(student.getName());
-        }
-
-        School school = new School("HZ");
-
-        school.entrance(students[0]);
-        console.log(school.getStudentPass());
+        Amplifier amp = new Amplifier("Top-O-Line Amplifier");
+        Tuner tuner = new Tuner("Top-O-Line AM/FM Tuner", amp);
+        DvdPlayer dvd = new DvdPlayer("Top-O-Line DVD Player", amp);
+        CdPlayer cd = new CdPlayer("Top-O-Line CD Player", amp);
+        Projector projector = new Projector("Top-O-Line Projector", dvd);
+        TheaterLights lights = new TheaterLights("Theater Ceiling Lights");
+        Screen screen = new Screen("Theater Screen");
+        PopcornPopper popper = new PopcornPopper("Popcorn Popper");
     }
 }
